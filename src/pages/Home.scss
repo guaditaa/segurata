@@ -7,16 +7,78 @@ ion-content {
         overflow-x: hidden;
         overflow-y: auto;
         flex-direction: row;
-        padding-top: 8px;
+        padding-bottom: 8px;
         align-content: flex-start;
-        div.tile {
-            width: calc(50% - 16px);
-            height: 200px;
-            margin-left: 8px;
-            margin-right: 8px;
-            margin-bottom: 8px;
-            border-radius: 8px;
-            box-shadow: 0 1px 4px 0px rgb(0 0 0 / 50%);
-        }
+        background-image: url('../assets/wallpaper.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+// Animation Truck
+svg#freepik_stories-vintage-truck-hide {
+    opacity: 0;
+}
+svg#freepik_stories-vintage-truck:not(.animated) .animable {
+    opacity: 0;
+}
+svg#freepik_stories-vintage-truck.animated #freepik--Truck--inject-139 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft,1.5s Infinite  linear floating;
+    animation-delay: 0.0s, 0.5s;
+}
+svg#freepik_stories-vintage-truck.animated #freepik--Sun--inject-139 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn,1.5s Infinite  linear floating;
+    animation-delay: 0s,0.5s;
+}
+svg#freepik_stories-vintage-truck.animated #freepik--Birds--inject-139 {
+    animation: 1.5s Infinite  linear floating;
+    animation-delay: -1s;
+}
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes lightSpeedLeft {
+    from {
+        transform: translate3d(-50%, 0, 0) skewX(20deg);
+        opacity: 0;
+    }
+    60% {
+        transform: skewX(-10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: skewX(2deg);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
