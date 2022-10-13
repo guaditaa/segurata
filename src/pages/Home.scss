@@ -1,0 +1,22 @@
+ion-content {
+    div.tiles {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-direction: row;
+        padding-top: 8px;
+        align-content: flex-start;
+        div.tile {
+            width: calc(50% - 16px);
+            height: 200px;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px 0px rgb(0 0 0 / 50%);
+        }
+    }
+}

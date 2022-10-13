@@ -1,0 +1,7 @@
+{
+  "name": "segurata",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
