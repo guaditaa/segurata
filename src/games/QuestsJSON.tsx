@@ -38,17 +38,17 @@ export const QuestionsFile: QuertionsType[] = [
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: ". “Cada usuario de la vía pública es responsable de una parte del tránsito.”¿Es correcta ésta premisa?",
-        incorrecta1: "No,porque los que tienen responsabilidad son aquellos que conducen cualquier tipo de vehículo",
-        incorrecta2: "No,la responsabilidad la asumen aquellos que obtienen una licencia de conducir",
+        pregunta: "“Cada usuario de la vía pública es responsable de una parte del tránsito.”\n¿Es correcta ésta premisa?",
+        incorrecta1: "No, porque los que tienen responsabilidad son aquellos que conducen cualquier tipo de vehículo",
+        incorrecta2: "No, la responsabilidad la asumen aquellos que obtienen una licencia de conducir",
         incorrecta3: "Ningun usuario es responsable",
-        respuesta: "Sí,porque se está obligado a no causar peligro ni entorpecer la circulación",
+        respuesta: "Sí, porque se está obligado a no causar peligro ni entorpecer la circulación",
         imagenID: "none"
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "Además de provocar víctimas fatales o lesionados graves,¿Qué otras consecuencias puede generar un siniestro de tránsito?",
-        incorrecta1: "es lo mismo que accidente vial",
+        pregunta: "Además de provocar víctimas fatales o lesionados graves, ¿Qué otras consecuencias puede generar un siniestro de tránsito?",
+        incorrecta1: "Es lo mismo que accidente vial",
         incorrecta2: "Sólo daños materiales",
         incorrecta3: "Daños materiales y costos sanitarios",
         respuesta: "Daños materiales, costos sanitarios y administrativos",
@@ -123,12 +123,12 @@ export const QuestionsFile: QuertionsType[] = [
         incorrecta1: "Usar auriculares y dispositivos electrónicos, que afecten la concentración",
         incorrecta2: "Usar ropa oscura y suelta",
         incorrecta3: "Los pantalones cortos y sueltos",
-        respuesta: "Ambas respuestas,son correctas",
+        respuesta: "Ambas respuestas, son correctas",
         imagenID: "https://pixnio.com/free-images/2017/05/31/2017-05-31-19-09-ID57.jpg"
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "En cuanto a su indumentaria,¿Cuál de los dos ciclistas presenta menor riesgo de sufrir un siniestro vial?",
+        pregunta: "En cuanto a su indumentaria, ¿Cuál de los dos ciclistas presenta menor riesgo de sufrir un siniestro vial?",
         incorrecta1: "Nada de eso representa algun riesgo para el ciclista",
         incorrecta2: "Ambas opciones presentan el mismo riesgo por igual",
         incorrecta3: "Opción B, ya que al tener ropa oscura no genera distracciones en los demás conductores",
@@ -146,7 +146,7 @@ export const QuestionsFile: QuertionsType[] = [
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "Un menor de 12 años puede circular en bicicleta por..",
+        pregunta: "Un menor de 12 años puede circular en bicicleta por:",
         incorrecta1: "La calle, acompañado de un adulto mayor de 18 años",
         incorrecta2: "Por la vereda, a la menor velocidad posible",
         incorrecta3: "La calle, sin supervision adulta",
@@ -209,7 +209,7 @@ export const QuestionsFile: QuertionsType[] = [
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "Cuando no hay demarcación de la senda peatonal,¿por dónde deben cruzar los peatones?",
+        pregunta: "Cuando no hay demarcación de la senda peatonal, ¿por dónde deben cruzar los peatones?",
         incorrecta1: "Por el medio de la calle",
         incorrecta2: "Es indistinto, siempre que miren a ambos lados antes de hacerlo",
         incorrecta3: "En coincidencia con las paradas de transporte",
@@ -227,7 +227,7 @@ export const QuestionsFile: QuertionsType[] = [
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "En caso de siniestro, el orden de actuación recomendado es",
+        pregunta: "En caso de siniestro, el orden de actuación recomendado es:",
         incorrecta1: "Alertar.Proteger.Socorrer",
         incorrecta2: "Alertar.Socorrer.Proteger",
         incorrecta3: "Socorrer.Proteger.Alertar",
@@ -299,7 +299,7 @@ export const QuestionsFile: QuertionsType[] = [
     },
     {
         categoria: "Seguridad Vial",
-        pregunta: "Si se va a conducir por un largo tiempo, lo recomendable es dormir la noche anterior..",
+        pregunta: "Si se va a conducir por un largo tiempo, lo recomendable es dormir la noche anterior:",
         incorrecta1: "No importa el descanso que el conductor haya tenido",
         incorrecta2: "Algunas horas, su cantidad no influye en la conducción ya que lo importante es realizar paradas de descanso",
         incorrecta3: "Al menos 4 horas",
