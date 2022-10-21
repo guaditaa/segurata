@@ -1,5 +1,5 @@
 import { IonIcon, IonRippleEffect, IonText } from "@ionic/react";
-import React, { PureComponent } from "react";
+import React, { CSSProperties, PureComponent } from "react";
 
 interface StyleSheet {
     [key: string]: React.CSSProperties;
@@ -8,19 +8,33 @@ interface StyleSheet {
 type IProps = {
     icon: string;
     title: string;
+    delay: number;
     onPress?: ()=>any;
 };
-type IState = {};
+type IState = {
+    style: CSSProperties;
+};
 
 export default class CustomTile extends PureComponent<IProps, IState> {
     constructor(props: IProps) {
         super(props);
+        this.state = {
+            style: {}
+        };
+    }
+    componentDidMount(): void {
+        setTimeout(()=>this.setState({
+            style: {
+                transform: 'scale(1)',
+                opacity: '1'
+            }
+        }), this.props.delay);
     }
     render(): React.ReactNode {
-        return(<div className="tile ion-activatable ripple-parent" style={styles.content}>
+        return(<div className="tile ion-activatable ripple-parent" style={{ ...styles.content, ...this.state.style}} onClick={this.props.onPress}>
             <IonIcon icon={this.props.icon} style={{ fontSize: 96 }} />
             <IonText style={styles.text}>{this.props.title}</IonText>
-            <IonRippleEffect onClick={this.props.onPress} />
+            <IonRippleEffect />
         </div>);
     }
 }
@@ -40,7 +54,10 @@ const styles: StyleSheet = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        transform: 'scale(0.6)',
+        opacity: '0',
+        transition: 'transform 0.35s, opacity 0.5s'
     },
     text: {
         marginTop: 12,
